@@ -4,7 +4,7 @@ export function PremiumContactHero() {
   return (
     <section className="premium-contact-hero-section relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #F8F9FF 100%)' }}>
       {/* Abstract Blurred Shapes */}
-      <div 
+      <div
         className="abstract-shapes absolute inset-0 pointer-events-none"
         style={{
           background: `radial-gradient(circle at 20% 30%, rgba(21, 21, 97, 0.04) 0%, transparent 60%),
@@ -18,7 +18,7 @@ export function PremiumContactHero() {
           {/* Left Content */}
           <div className="hero-content-left space-y-8">
             {/* Heading */}
-            <h1 
+            <h1
               className="hero-heading-animate contact-hero-heading"
               style={{
                 fontFamily: 'Inter, sans-serif',
@@ -29,11 +29,11 @@ export function PremiumContactHero() {
                 lineHeight: '1.15',
               }}
             >
-              Let's Start Something Extraordinary
+              Let&apos;s Start Something Extraordinary
             </h1>
 
             {/* Subheading */}
-            <p 
+            <p
               className="hero-subheading-animate contact-hero-paragraph"
               style={{
                 fontFamily: 'Inter, sans-serif',
@@ -44,13 +44,13 @@ export function PremiumContactHero() {
                 maxWidth: '560px',
               }}
             >
-              Whether you're exploring a new project, partnership, or consultation — our team is ready to help you move forward.
+              Whether you&apos;re exploring a new project, partnership, or consultation — our team is ready to help you move forward.
             </p>
           </div>
 
           {/* Right Illustration */}
           <div className="hero-illustration-right flex items-center justify-center">
-            <div 
+            <div
               className="illustration-placeholder-animate contact-hero-image"
               style={{
                 width: '100%',
@@ -152,8 +152,8 @@ export function PremiumContactHero() {
           }
         }
 
-        /* ===== MOBILE BREAKPOINT (≤414px) ===== */
-        @media (max-width: 414px) {
+        /* ===== MOBILE BREAKPOINT (≤767px) ===== */
+        @media (max-width: 767px) {
           .contact-hero-container {
             padding-left: 1.25rem;
             padding-right: 1.25rem;

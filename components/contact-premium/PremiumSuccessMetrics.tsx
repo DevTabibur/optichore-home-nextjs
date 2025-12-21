@@ -32,7 +32,7 @@ export function PremiumSuccessMetrics() {
   ];
 
   return (
-    <section 
+    <section
       className="why-choose-premium-section w-full py-40"
       style={{
         background: 'linear-gradient(180deg, #FFFFFF 0%, #F8FBFF 100%)',
@@ -40,11 +40,11 @@ export function PremiumSuccessMetrics() {
     >
       <div className="why-choose-container max-w-[1440px] mx-auto px-12">
         <div className="why-choose-grid grid grid-cols-2 gap-20 items-center">
-          
+
           {/* LEFT SIDE — VALUE PROPOSITION */}
           <div className="value-proposition-block">
             {/* Label */}
-            <div 
+            <div
               className="why-label-animate why-choose-label mb-6"
               style={{
                 fontFamily: 'Inter, sans-serif',
@@ -59,7 +59,7 @@ export function PremiumSuccessMetrics() {
             </div>
 
             {/* Main Heading */}
-            <h2 
+            <h2
               className="why-heading-animate why-choose-heading"
               style={{
                 fontFamily: 'Inter, sans-serif',
@@ -75,7 +75,7 @@ export function PremiumSuccessMetrics() {
             </h2>
 
             {/* Subtext */}
-            <p 
+            <p
               className="why-subtext-animate why-choose-paragraph"
               style={{
                 fontFamily: 'Inter, sans-serif',
@@ -106,7 +106,7 @@ export function PremiumSuccessMetrics() {
                     }}
                   >
                     {/* Icon */}
-                    <div 
+                    <div
                       style={{
                         width: '52px',
                         height: '52px',
@@ -125,7 +125,7 @@ export function PremiumSuccessMetrics() {
 
                     {/* Text */}
                     <div className="feature-text-content">
-                      <h4 
+                      <h4
                         className="feature-title"
                         style={{
                           fontFamily: 'Inter, sans-serif',
@@ -138,7 +138,7 @@ export function PremiumSuccessMetrics() {
                       >
                         {feature.title}
                       </h4>
-                      <p 
+                      <p
                         className="feature-description"
                         style={{
                           fontFamily: 'Inter, sans-serif',
@@ -180,7 +180,7 @@ export function PremiumSuccessMetrics() {
                     }}
                   >
                     <BadgeIcon className="w-5 h-5" style={{ color: '#151561' }} />
-                    <span 
+                    <span
                       style={{
                         fontFamily: 'Inter, sans-serif',
                         fontSize: '14px',
@@ -411,69 +411,10 @@ export function PremiumSuccessMetrics() {
         }
 
         /* ===== TABLET BREAKPOINT (768px - 1024px) ===== */
-        @media (min-width: 768px) and (max-width: 1024px) {
-          .why-choose-premium-section {
-            padding-top: 6rem;
-            padding-bottom: 6rem;
-          }
+        
 
-          .why-choose-container {
-            padding-left: 2rem;
-            padding-right: 2rem;
-          }
-
-          .why-choose-grid {
-            grid-template-columns: 1fr !important;
-            gap: 4rem !important;
-          }
-
-          .why-choose-label {
-            text-align: center;
-          }
-
-          .why-choose-heading {
-            font-size: 38px !important;
-            text-align: center;
-          }
-
-          .why-choose-paragraph {
-            font-size: 17px !important;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 90%;
-          }
-
-          .why-choose-features {
-            max-width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-          }
-
-          .why-choose-badges {
-            justify-content: center;
-            flex-wrap: wrap;
-          }
-
-          .why-choose-images {
-            height: 500px !important;
-            max-width: 600px;
-            margin: 0 auto;
-          }
-
-          .why-main-image {
-            width: 90% !important;
-            height: 420px !important;
-          }
-
-          .why-secondary-image {
-            width: 55% !important;
-            height: 280px !important;
-          }
-        }
-
-        /* ===== MOBILE BREAKPOINT (≤414px) ===== */
-        @media (max-width: 414px) {
+        /* ===== MOBILE BREAKPOINT (≤767px) ===== */
+        @media (max-width: 767px) {
           .why-choose-premium-section {
             padding-top: 3rem;
             padding-bottom: 3rem;

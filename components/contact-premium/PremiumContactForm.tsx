@@ -720,8 +720,8 @@ export function PremiumContactForm() {
           }
         }
 
-        /* ===== MOBILE BREAKPOINT (≤414px) ===== */
-        @media (max-width: 414px) {
+        /* ===== MOBILE BREAKPOINT (≤767px) ===== */
+        @media (max-width: 767px) {
           .premium-form-section {
             padding-top: 3rem;
             padding-bottom: 3rem;
