@@ -84,7 +84,7 @@ export function FacebookTestimonial() {
                   marginBottom: '28px',
                 }}
               >
-                "{testimonial.testimonial}"
+                &quot;{testimonial.testimonial}&quot;
               </p>
 
               {/* Author */}
@@ -137,7 +137,7 @@ export function FacebookTestimonial() {
         {/* Case Studies Link */}
         <div className="text-center">
           <SafeLink 
-            to="#"
+            href="#"
             className="fb-case-studies-link inline-flex items-center gap-2"
             style={{
               fontFamily: 'Inter, sans-serif',
@@ -211,7 +211,7 @@ export function FacebookTestimonial() {
                   textAlign: 'left',
                 }}
               >
-                "{testimonial.testimonial}"
+                &quot;{testimonial.testimonial}&quot;
               </p>
 
               {/* Author */}
@@ -264,7 +264,7 @@ export function FacebookTestimonial() {
         {/* Case Studies Link */}
         <div className="text-center">
           <SafeLink 
-            to="#"
+            href="#"
             className="fb-case-studies-link-responsive inline-flex items-center gap-2"
             style={{
               fontFamily: 'Inter, sans-serif',

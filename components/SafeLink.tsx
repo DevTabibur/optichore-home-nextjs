@@ -54,6 +54,7 @@ interface SafeLinkProps extends Omit<LinkProps, 'to'> {
   className?: string;
   style?: React.CSSProperties;
   disabledClassName?: string;
+  onMouseLeave?:any
 }
 
 /**
@@ -61,7 +62,7 @@ interface SafeLinkProps extends Omit<LinkProps, 'to'> {
  * Automatically disables links that don't have valid destination pages.
  * Keeps the text visible but removes click interaction and hover effects.
  */
-export function SafeLink({ href, children, className = '', style = {}, disabledClassName = '', ...rest }: SafeLinkProps) {
+export function SafeLink({ href, children, className = '', style = {}, disabledClassName = '',onMouseLeave, ...rest }: SafeLinkProps) {
   // Check if the route is valid
   const isValidRoute = VALID_ROUTES.includes(href) || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:');
   

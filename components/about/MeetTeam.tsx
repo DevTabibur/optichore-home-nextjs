@@ -1,5 +1,5 @@
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import ceoImage from 'figma:asset/b59948c16a20b39c9dc10bb32b623e6f5f7b78aa.png';
+// import ceoImage from 'figma:asset/b59948c16a20b39c9dc10bb32b623e6f5f7b78aa.png';
 
 export function MeetTeam() {
   // Leadership team data
@@ -7,7 +7,7 @@ export function MeetTeam() {
     {
       name: 'MD Mahbubur Rahman',
       title: 'Chief Executive Officer (CEO)',
-      image: ceoImage,
+      // image: ceoImage,
     },
     {
       name: 'Riadur Rahman Chowdhury',

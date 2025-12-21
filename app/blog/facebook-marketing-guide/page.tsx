@@ -365,7 +365,7 @@ export default function BlogArticlePage() {
                   lineHeight: '1.8',
                 }}
               >
-                Before you can start advertising, you need a well-optimized business page. Here's a step-by-step guide to setting up your presence:
+                Before you can start advertising, you need a well-optimized business page. Here&apos;s a step-by-step guide to setting up your presence:
               </p>
             </div>
 
@@ -627,7 +627,7 @@ export default function BlogArticlePage() {
                     e.currentTarget.style.backgroundColor = '#FF0000';
                     e.currentTarget.style.color = '#FFFFFF';
                   }}
-                  onMouseLeave={(e) => {
+                  onMouseLeave={(e: any) => {
                     e.currentTarget.style.backgroundColor = 'rgba(21, 21, 97, 0.06)';
                     e.currentTarget.style.color = '#151561';
                   }}
@@ -649,7 +649,7 @@ export default function BlogArticlePage() {
                     e.currentTarget.style.backgroundColor = '#FF0000';
                     e.currentTarget.style.color = '#FFFFFF';
                   }}
-                  onMouseLeave={(e) => {
+                  onMouseLeave={(e: any) => {
                     e.currentTarget.style.backgroundColor = 'rgba(21, 21, 97, 0.06)';
                     e.currentTarget.style.color = '#151561';
                   }}
@@ -750,7 +750,7 @@ export default function BlogArticlePage() {
                         e.currentTarget.style.backgroundColor = '#FF0000';
                         e.currentTarget.style.color = '#FFFFFF';
                       }}
-                      onMouseLeave={(e) => {
+                      onMouseLeave={(e: any) => {
                         e.currentTarget.style.backgroundColor = 'rgba(21, 21, 97, 0.06)';
                         e.currentTarget.style.color = '#151561';
                       }}
@@ -950,7 +950,7 @@ export default function BlogArticlePage() {
                   e.currentTarget.style.transform = 'translateY(-2px)';
                   e.currentTarget.style.boxShadow = '0 8px 24px rgba(255, 0, 0, 0.35)';
                 }}
-                onMouseLeave={(e) => {
+                onMouseLeave={(e: any) => {
                   e.currentTarget.style.transform = 'translateY(0)';
                   e.currentTarget.style.boxShadow = '0 4px 16px rgba(255, 0, 0, 0.25)';
                 }}

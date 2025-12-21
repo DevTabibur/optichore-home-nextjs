@@ -1,3 +1,4 @@
+"use client"
 import { ReactNode, ButtonHTMLAttributes } from 'react';
 import { isValidRoute } from './SafeLink';
 import { useRouter } from 'next/navigation';

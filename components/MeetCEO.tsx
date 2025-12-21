@@ -1,5 +1,5 @@
 import { Linkedin, ArrowRight, Award, Users, Lightbulb, Globe } from 'lucide-react';
-import ceoImage from 'figma:asset/b59948c16a20b39c9dc10bb32b623e6f5f7b78aa.png';
+// import ceoImage from 'figma:asset/b59948c16a20b39c9dc10bb32b623e6f5f7b78aa.png';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function MeetCEO() {
@@ -112,11 +112,11 @@ export function MeetCEO() {
                 boxShadow: '0 24px 72px rgba(0, 0, 0, 0.09)',
               }}
             >
-              <img
+              {/* <img
                 src={ceoImage}
                 alt="Mahbub - CEO of Optichore"
                 className="w-full h-[650px] object-cover"
-              />
+              /> */}
               
               {/* Overlay Gradient for Premium Effect */}
               <div 
@@ -319,11 +319,11 @@ export function MeetCEO() {
                 boxShadow: '0 24px 72px rgba(0, 0, 0, 0.09)',
               }}
             >
-              <img
+              {/* <img
                 src={ceoImage}
                 alt="Mahbub - CEO of Optichore"
                 className="w-full md:h-[500px] h-[450px] object-cover"
-              />
+            /> */}
               
               {/* Overlay Gradient for Premium Effect */}
               <div 

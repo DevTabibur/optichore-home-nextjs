@@ -148,7 +148,7 @@ export function SitemapGrid() {
                   {section.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
                       <SafeLink
-                        to={link.path}
+                        href={link.path}
                         className="sitemap-card-link"
                         style={{
                           fontFamily: 'Inter, sans-serif',

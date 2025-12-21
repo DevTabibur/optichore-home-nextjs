@@ -94,7 +94,7 @@ export function ServicesGrid() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <SafeLink key={index} to={service.link}>
+              <SafeLink key={index} href={service.link}>
                 <div
                   className="service-card"
                   style={{
@@ -196,7 +196,7 @@ export function ServicesGrid() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <SafeLink key={index} to={service.link}>
+              <SafeLink key={index} href={service.link}>
                 <div
                   className="service-card-responsive"
                   style={{

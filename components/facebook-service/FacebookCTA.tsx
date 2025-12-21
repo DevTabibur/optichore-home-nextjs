@@ -57,7 +57,7 @@ export function FacebookCTA() {
 
           {/* Buttons */}
           <div className="fb-cta-buttons flex items-center justify-center gap-4">
-            <SafeLink to="/contact">
+            <SafeLink href="/contact">
               <button
                 className="fb-cta-btn-primary"
                 style={{
@@ -82,7 +82,7 @@ export function FacebookCTA() {
               </button>
             </SafeLink>
 
-            <SafeLink to="/contact">
+            <SafeLink href="/contact">
               <button
                 className="fb-cta-btn-secondary"
                 style={{
@@ -144,7 +144,7 @@ export function FacebookCTA() {
 
           {/* Buttons - Tablet: Horizontal, Mobile: Vertical */}
           <div className="fb-cta-buttons-responsive md:flex md:items-center md:justify-center md:gap-4 md:flex-row flex flex-col gap-4">
-            <SafeLink to="/contact" className="md:inline-block block w-full md:w-auto">
+            <SafeLink href="/contact" className="md:inline-block block w-full md:w-auto">
               <button
                 className="fb-cta-btn-primary-responsive w-full md:w-auto"
                 style={{
@@ -170,7 +170,7 @@ export function FacebookCTA() {
               </button>
             </SafeLink>
 
-            <SafeLink to="/contact" className="md:inline-block block w-full md:w-auto">
+            <SafeLink href="/contact" className="md:inline-block block w-full md:w-auto">
               <button
                 className="fb-cta-btn-secondary-responsive w-full md:w-auto"
                 style={{

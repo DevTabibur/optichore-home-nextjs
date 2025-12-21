@@ -58,7 +58,7 @@ export function FacebookHero() {
 
             {/* Buttons */}
             <div className="facebook-hero-buttons flex items-center gap-4">
-              <SafeLink to="/contact">
+              <SafeLink href="/contact">
                 <button
                   className="facebook-hero-btn-primary"
                   style={{
@@ -83,7 +83,7 @@ export function FacebookHero() {
                 </button>
               </SafeLink>
 
-              <SafeLink to="/contact">
+              <SafeLink href="/contact">
                 <button
                   className="facebook-hero-btn-secondary"
                   style={{
@@ -217,7 +217,7 @@ export function FacebookHero() {
 
             {/* Buttons - Inline on tablet, stacked on mobile */}
             <div className="facebook-hero-buttons-responsive md:flex md:items-center md:gap-4 md:mb-0 mb-12 md:space-y-0 space-y-4">
-              <SafeLink to="/contact" className="block md:inline-block">
+              <SafeLink href="/contact" className="block md:inline-block">
                 <button
                   className="facebook-hero-btn-primary w-full md:w-auto justify-center"
                   style={{
@@ -242,7 +242,7 @@ export function FacebookHero() {
                 </button>
               </SafeLink>
 
-              <SafeLink to="/contact" className="block md:inline-block">
+              <SafeLink href="/contact" className="block md:inline-block">
                 <button
                   className="facebook-hero-btn-secondary w-full md:w-auto justify-center"
                   style={{

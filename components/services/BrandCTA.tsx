@@ -8,7 +8,7 @@ export function BrandCTA() {
       <div className="max-w-[1440px] mx-auto px-12 relative z-10">
         <div className="text-center space-y-8">
           <h2 style={{ fontFamily: 'Inter, sans-serif', fontSize: '56px', fontWeight: 700, color: '#FFFFFF', letterSpacing: '-0.02em', lineHeight: '1.2', maxWidth: '800px', margin: '0 auto' }}>
-            Let's build your brand identity.
+            Let&apos;s build your brand identity.
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '20px', fontWeight: 400, color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.6', maxWidth: '600px', margin: '0 auto' }}>
             Ready to create a memorable brand that stands out?

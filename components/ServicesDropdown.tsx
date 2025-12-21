@@ -61,7 +61,7 @@ export function ServicesDropdown() {
           {services.map((service, index) => (
             <SafeLink
               key={index}
-              to={service.link}
+              href={service.link}
               className="service-card group p-4 rounded-lg hover:bg-gray-50 transition-all duration-200"
             >
               <div className="flex flex-col gap-2.5">
@@ -90,7 +90,7 @@ export function ServicesDropdown() {
           style={{ borderTop: '1px solid rgba(0, 0, 0, 0.06)' }}
         >
           <SafeLink 
-            to="/services" 
+            href="/services" 
             className="view-all-link text-[14px] font-medium transition-opacity hover:opacity-70 inline-flex items-center gap-2"
             style={{ color: '#FF0000' }}
           >

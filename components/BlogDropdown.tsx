@@ -57,7 +57,7 @@ export function BlogDropdown() {
               {categories.map((category) => (
                 <li key={category.slug}>
                   <SafeLink
-                    to={category.active ? `/blog/category/${category.slug}` : '#'}
+                    href={category.active ? `/blog/category/${category.slug}` : '#'}
                     className="megamenu-link-item flex items-start gap-3 group"
                   >
                     <div className="flex-1">
@@ -99,7 +99,7 @@ export function BlogDropdown() {
               {tags.map((tag) => (
                 <li key={tag.slug}>
                   <SafeLink
-                    to={tag.active ? `/blog/tag/${tag.slug}` : '#'}
+                    href={tag.active ? `/blog/tag/${tag.slug}` : '#'}
                     className="megamenu-link-item flex items-start gap-3 group"
                   >
                     <div className="flex-1">
@@ -141,7 +141,7 @@ export function BlogDropdown() {
               {authors.map((author) => (
                 <li key={author.slug}>
                   <SafeLink
-                    to={author.active ? `/blog/author/${author.slug}` : '#'}
+                    href={author.active ? `/blog/author/${author.slug}` : '#'}
                     className="megamenu-link-item flex items-start gap-3 group"
                   >
                     <div className="flex-1">
@@ -179,7 +179,7 @@ export function BlogDropdown() {
             <ul className="space-y-3.5">
               <li>
                 <SafeLink
-                  to="/blog"
+                  href="/blog"
                   className="megamenu-link-item flex items-start gap-3 group"
                 >
                   <div className="flex-1">

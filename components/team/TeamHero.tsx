@@ -1,6 +1,6 @@
 import { Quote, Linkedin } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import ceoImage from 'figma:asset/b59948c16a20b39c9dc10bb32b623e6f5f7b78aa.png';
+// import ceoImage from 'figma:asset/b59948c16a20b39c9dc10bb32b623e6f5f7b78aa.png';
 
 export function TeamHero() {
   return (
@@ -65,7 +65,7 @@ export function TeamHero() {
                   overflow: 'hidden',
                 }}
               >
-                <ImageWithFallback
+                {/* <ImageWithFallback
                   src={ceoImage}
                   alt="Mahbub - Founder & CEO"
                   style={{
@@ -73,7 +73,7 @@ export function TeamHero() {
                     height: '100%',
                     objectFit: 'cover',
                   }}
-                />
+                /> */}
               </div>
 
               {/* CEO Info */}

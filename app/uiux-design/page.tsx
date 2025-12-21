@@ -130,7 +130,7 @@ export default function UIUXDesignPage() {
                   style={{
                     background: 'linear-gradient(135deg, #FFFFFF 0%, #F8FAFF 100%)',
                     borderRadius: '24px',
-                    padding: window.innerWidth < 768 ? '32px 24px' : '40px 32px',
+                    // padding: window.innerWidth < 768 ? '32px 24px' : '40px 32px',
                     border: '1px solid rgba(0, 0, 0, 0.06)',
                     boxShadow: '0 8px 32px rgba(21, 21, 97, 0.08)',
                     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
@@ -234,7 +234,7 @@ export default function UIUXDesignPage() {
                     backdropFilter: 'blur(20px)',
                     WebkitBackdropFilter: 'blur(20px)',
                     borderRadius: '24px',
-                    padding: window.innerWidth < 768 ? '28px 20px' : '40px',
+                    // padding: window.innerWidth < 768 ? '28px 20px' : '40px',
                     border: '1px solid rgba(255, 255, 255, 0.4)',
                     boxShadow: '0 8px 32px rgba(21, 21, 97, 0.1)',
                     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
