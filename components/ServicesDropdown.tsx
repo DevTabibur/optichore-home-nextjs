@@ -48,7 +48,7 @@ export function ServicesDropdown() {
   ];
 
   return (
-    <div className="dropdown-container absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[720px] animate-dropdown-fade-down">
+    <div className="dropdown-container absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[720px] ">
       <div 
         className="dropdown-inner rounded-[10px] p-8"
         style={{
