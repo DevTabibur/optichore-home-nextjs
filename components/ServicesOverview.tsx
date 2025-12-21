@@ -132,7 +132,7 @@ export function ServicesOverview() {
 
               {/* Learn More Link */}
               <SafeLink
-                to="#services"
+                href="#services"
                 className="service-learn-more-link inline-flex items-center gap-2"
                 style={{
                   fontFamily: 'Inter, sans-serif',
@@ -151,7 +151,7 @@ export function ServicesOverview() {
         {/* Bottom CTA Row - Responsive spacing */}
         <div className="bottom-cta-row text-center lg:pt-8 md:pt-6 pt-5">
           <SafeLink
-            to="/services"
+            href="/services"
             className="view-all-services-link inline-flex items-center gap-2.5"
             style={{
               fontFamily: 'Inter, sans-serif',

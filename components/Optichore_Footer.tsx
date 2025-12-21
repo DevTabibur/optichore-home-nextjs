@@ -1,7 +1,9 @@
+"use client"
 import { useState } from 'react';
 import { Linkedin, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { SafeLink } from './SafeLink';
+import Link from 'next/link';
 
 export function Optichore_Footer() {
   const [email, setEmail] = useState('');
@@ -154,7 +156,7 @@ export function Optichore_Footer() {
               >
                 {/* Logo */}
                 <div className="footer-logo-light">
-                  <SafeLink to="/">
+                  <SafeLink href="/">
                     <ImageWithFallback
                       src="https://optichore.com/wp-content/uploads/2025/02/Logo-PNG-1.png"
                       alt="Optichore"
@@ -228,7 +230,7 @@ export function Optichore_Footer() {
                   {quickLinks.map((link, index) => (
                     <li key={index}>
                       <SafeLink 
-                        to={link.path} 
+                        href={link.path} 
                         className="footer-link-light footer-link-force-active"
                         style={{
                           cursor: 'pointer',
@@ -252,7 +254,7 @@ export function Optichore_Footer() {
                 <ul className="space-y-3.5">
                   {services.map((service, index) => (
                     <li key={index}>
-                      <SafeLink to={service.path} className="footer-link-light">
+                      <SafeLink href={service.path} className="footer-link-light">
                         {service.label}
                       </SafeLink>
                     </li>
@@ -384,17 +386,17 @@ export function Optichore_Footer() {
                 <div className="flex items-center gap-10">
                   {legalLinks.map((link, index) => (
                     link.path.startsWith('#') ? (
-                      <a
+                      <Link
                         key={index}
                         href={link.path}
                         className="footer-legal-link-light"
                       >
                         {link.label}
-                      </a>
+                      </Link>
                     ) : (
                       <SafeLink
                         key={index}
-                        to={link.path}
+                        href={link.path}
                         className="footer-legal-link-light"
                       >
                         {link.label}
@@ -517,7 +519,7 @@ export function Optichore_Footer() {
               <div className="footer-brand-col-responsive md:space-y-7 space-y-6">
                 {/* Logo */}
                 <div className="footer-logo-responsive">
-                  <SafeLink to="/">
+                  <SafeLink href="/">
                     <ImageWithFallback
                       src="https://optichore.com/wp-content/uploads/2025/02/Logo-PNG-1.png"
                       alt="Optichore"
@@ -587,7 +589,7 @@ export function Optichore_Footer() {
                   {quickLinks.map((link, index) => (
                     <li key={index}>
                       <SafeLink 
-                        to={link.path} 
+                        href={link.path} 
                         className="footer-link-light footer-link-force-active"
                         style={{
                           cursor: 'pointer',
@@ -608,7 +610,7 @@ export function Optichore_Footer() {
                 <ul className="space-y-3.5">
                   {services.map((service, index) => (
                     <li key={index}>
-                      <SafeLink to={service.path} className="footer-link-light">
+                      <SafeLink href={service.path} className="footer-link-light">
                         {service.label}
                       </SafeLink>
                     </li>
@@ -735,17 +737,17 @@ export function Optichore_Footer() {
                 <div className="flex md:items-center md:gap-10 gap-6 md:flex-row flex-col items-center">
                   {legalLinks.map((link, index) => (
                     link.path.startsWith('#') ? (
-                      <a
+                      <Link
                         key={index}
                         href={link.path}
                         className="footer-legal-link-light"
                       >
                         {link.label}
-                      </a>
+                      </Link>
                     ) : (
                       <SafeLink
                         key={index}
-                        to={link.path}
+                        href={link.path}
                         className="footer-legal-link-light"
                       >
                         {link.label}

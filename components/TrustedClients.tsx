@@ -1,3 +1,4 @@
+"use client"
 import { Star } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState, useEffect, useRef } from 'react';
@@ -305,7 +306,7 @@ export function TrustedClients() {
                         minHeight: '120px',
                       }}
                     >
-                      "{testimonial.text}"
+                      &quot;{testimonial.text}&quot;
                     </p>
 
                     {/* Profile */}
@@ -511,7 +512,7 @@ export function TrustedClients() {
                         minHeight: 'auto',
                       }}
                     >
-                      "{testimonial.text}"
+                      &quot;{testimonial.text}&quot;
                     </p>
 
                     {/* Profile */}

@@ -155,7 +155,7 @@ export function BlogPreview() {
 
                   {/* Read More Link */}
                   <SafeLink
-                    to="#blog-post"
+                    href="#blog-post"
                     className="blog-read-more-link inline-flex items-center gap-2 pt-2"
                     style={{
                       fontFamily: 'Inter, sans-serif',
@@ -290,7 +290,7 @@ export function BlogPreview() {
 
                   {/* Read More Link */}
                   <SafeLink
-                    to="#blog-post"
+                    href="#blog-post"
                     className="blog-read-more-link inline-flex items-center gap-2 pt-2"
                     style={{
                       fontFamily: 'Inter, sans-serif',

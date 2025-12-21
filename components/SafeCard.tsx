@@ -1,6 +1,7 @@
+"use client"
 import { ReactNode } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { isValidRoute } from './SafeLink';
+import { useRouter } from 'next/navigation';
 
 interface SafeCardProps {
   to?: string;
@@ -16,7 +17,7 @@ interface SafeCardProps {
  * Removes hover effects, pointer cursor, and sets opacity to 60%.
  */
 export function SafeCard({ to, children, className = '', style = {}, onClick }: SafeCardProps) {
-  const navigate = useNavigate();
+  const router = useRouter();
   
   // Check if destination is valid
   const isValid = !to || isValidRoute(to);
@@ -29,7 +30,7 @@ export function SafeCard({ to, children, className = '', style = {}, onClick }: 
     }
     
     if (to && !to.startsWith('#') && !to.startsWith('http')) {
-      navigate(to);
+      router.push(to);
     } else if (to && to.startsWith('http')) {
       window.location.href = to;
     }

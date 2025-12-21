@@ -1,4 +1,6 @@
-import { Link, LinkProps } from 'react-router-dom';
+"use client"
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import Link, { LinkProps } from 'next/link';
 import { ReactNode } from 'react';
 
 // Define all valid routes in your application
@@ -47,7 +49,7 @@ const VALID_ROUTES = [
 ];
 
 interface SafeLinkProps extends Omit<LinkProps, 'to'> {
-  to: string;
+  href: string;
   children: ReactNode;
   className?: string;
   style?: React.CSSProperties;
@@ -59,33 +61,33 @@ interface SafeLinkProps extends Omit<LinkProps, 'to'> {
  * Automatically disables links that don't have valid destination pages.
  * Keeps the text visible but removes click interaction and hover effects.
  */
-export function SafeLink({ to, children, className = '', style = {}, disabledClassName = '', ...rest }: SafeLinkProps) {
+export function SafeLink({ href, children, className = '', style = {}, disabledClassName = '', ...rest }: SafeLinkProps) {
   // Check if the route is valid
-  const isValidRoute = VALID_ROUTES.includes(to) || to.startsWith('#') || to.startsWith('http') || to.startsWith('mailto:') || to.startsWith('tel:');
+  const isValidRoute = VALID_ROUTES.includes(href) || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:');
   
   // If valid route, render normal Link
   if (isValidRoute) {
     // External links or hash links
-    if (to.startsWith('http') || to.startsWith('mailto:') || to.startsWith('tel:')) {
+    if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:')) {
       return (
-        <a href={to} className={className} style={style} {...rest}>
+        <Link href={href} className={className} style={style} {...rest}>
           {children}
-        </a>
+        </Link>
       );
     }
     
     // Hash links
-    if (to.startsWith('#')) {
+    if (href.startsWith('#')) {
       return (
-        <a href={to} className={className} style={style} {...rest}>
+        <Link href={href} className={className} style={style} {...rest}>
           {children}
-        </a>
+        </Link>
       );
     }
     
     // Internal routes
     return (
-      <Link to={to} className={className} style={style} {...rest}>
+      <Link href={href} className={className} style={style} {...rest}>
         {children}
       </Link>
     );

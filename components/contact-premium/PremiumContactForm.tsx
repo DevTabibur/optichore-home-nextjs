@@ -1,6 +1,7 @@
+"use client"
 import { useState } from 'react';
 import { Send, CheckCircle, Home, Briefcase } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export function PremiumContactForm() {
   const [formData, setFormData] = useState({
@@ -370,7 +371,7 @@ export function PremiumContactForm() {
 
               {/* Buttons */}
               <div className="success-buttons flex items-center justify-center gap-5">
-                <Link to="/">
+                <Link href="/">
                   <button
                     className="success-btn-primary"
                     style={{
@@ -395,7 +396,7 @@ export function PremiumContactForm() {
                   </button>
                 </Link>
 
-                <Link to="/services">
+                <Link href="/services">
                   <button
                     className="success-btn-secondary"
                     style={{

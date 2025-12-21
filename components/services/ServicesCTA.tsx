@@ -1,5 +1,5 @@
 import { Phone, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export function ServicesCTA() {
   return (
@@ -98,7 +98,7 @@ export function ServicesCTA() {
                 </button>
               </a>
 
-              <Link to="/contact">
+              <Link href="/contact">
                 <button
                   className="services-cta-btn-secondary"
                   style={{
@@ -211,7 +211,7 @@ export function ServicesCTA() {
                 </button>
               </a>
 
-              <Link to="/contact" className="block md:inline-block">
+              <Link href="/contact" className="block md:inline-block">
                 <button
                   className="services-cta-btn-secondary w-full md:w-auto justify-center"
                   style={{

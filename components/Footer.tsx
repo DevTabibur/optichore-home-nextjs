@@ -1,7 +1,8 @@
+"use client"
 import { useState } from 'react';
 import { Linkedin, Facebook, Instagram, Mail, Phone, MapPin, Clock } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import Link from 'next/link';
 
 export function Footer() {
   const [email, setEmail] = useState('');
@@ -207,7 +208,7 @@ export function Footer() {
               <ul className="space-y-3.5">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="footer-link-light">
+                    <Link href={link.path} className="footer-link-light">
                       {link.label}
                     </Link>
                   </li>

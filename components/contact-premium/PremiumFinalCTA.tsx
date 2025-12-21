@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export function PremiumFinalCTA() {
   return (
@@ -24,7 +24,7 @@ export function PremiumFinalCTA() {
               lineHeight: '1.2',
             }}
           >
-            We're Ready When You Are.
+            We&apos;re Ready When You Are.
           </h2>
 
           {/* Subtext */}
@@ -40,12 +40,12 @@ export function PremiumFinalCTA() {
               lineHeight: '1.6',
             }}
           >
-            Let's turn your vision into reality. Reach out today and discover how Optichore can accelerate your growth.
+            Let&apos;s turn your vision into reality. Reach out today and discover how Optichore can accelerate your growth.
           </p>
 
           {/* CTA Button */}
           <div className="final-cta-button-wrapper pt-4">
-            <Link to="/" className="premium-cta-button">
+            <Link href="/" className="premium-cta-button">
               <span>Get Started</span>
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

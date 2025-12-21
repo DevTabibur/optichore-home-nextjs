@@ -1,6 +1,6 @@
 import { CheckCircle2, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
+import Link from 'next/link';
 
 export function FacebookMarketingBlock() {
   const deliverables = [
@@ -82,7 +82,7 @@ export function FacebookMarketingBlock() {
 
             {/* CTA Buttons */}
             <div className="flex items-center gap-5">
-              <Link to="/contact">
+              <Link href="/contact">
                 <button
                   className="fb-marketing-cta-primary"
                   style={{
@@ -212,7 +212,7 @@ export function FacebookMarketingBlock() {
 
             {/* CTA Buttons - Responsive: Inline on Tablet, Stacked on Mobile */}
             <div className="md:flex md:items-center md:gap-5 md:space-y-0 space-y-4 md:mb-0 mb-10">
-              <Link to="/contact" className="block md:inline-block">
+              <Link href="/contact" className="block md:inline-block">
                 <button
                   className="fb-marketing-cta-primary w-full md:w-auto"
                   style={{

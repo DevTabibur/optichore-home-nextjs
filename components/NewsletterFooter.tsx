@@ -1,7 +1,8 @@
+"use client"
 import { useState } from 'react';
 import { Linkedin, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import Link from 'next/link';
 
 export function NewsletterFooter() {
   const [email, setEmail] = useState('');
@@ -125,7 +126,7 @@ export function NewsletterFooter() {
             >
               {/* Logo */}
               <div className="footer-logo-wrapper">
-                <Link to="/">
+                <Link href="/">
                   <ImageWithFallback
                     src="https://optichore.com/wp-content/uploads/2025/02/Logo-PNG-1.png"
                     alt="Optichore"
@@ -210,7 +211,7 @@ export function NewsletterFooter() {
               <ul className="space-y-3">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="footer-link-dark">
+                    <Link href={link.path} className="footer-link-dark">
                       {link.label}
                     </Link>
                   </li>
@@ -227,7 +228,7 @@ export function NewsletterFooter() {
               <ul className="space-y-3">
                 {services.map((service, index) => (
                   <li key={index}>
-                    <Link to={`/${service.toLowerCase().replace(/\s+/g, '-')}`} className="footer-link-dark">
+                    <Link href={`/${service.toLowerCase().replace(/\s+/g, '-')}`} className="footer-link-dark">
                       {service}
                     </Link>
                   </li>

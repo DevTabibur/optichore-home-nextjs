@@ -1,6 +1,6 @@
 import { ReactNode, ButtonHTMLAttributes } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { isValidRoute } from './SafeLink';
+import { useRouter } from 'next/navigation';
 
 interface SafeButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   to?: string;
@@ -16,7 +16,7 @@ interface SafeButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
  * Removes hover effects, pointer cursor, and sets opacity to 60%.
  */
 export function SafeButton({ to, href, children, className = '', style = {}, onClick, ...rest }: SafeButtonProps) {
-  const navigate = useNavigate();
+  const router = useRouter();
   const destination = to || href;
   
   // Check if destination is valid
@@ -33,7 +33,7 @@ export function SafeButton({ to, href, children, className = '', style = {}, onC
     }
     
     if (destination && !destination.startsWith('#') && !destination.startsWith('http') && !destination.startsWith('mailto:') && !destination.startsWith('tel:')) {
-      navigate(destination);
+      router.push(destination);
     } else if (destination && (destination.startsWith('http') || destination.startsWith('mailto:') || destination.startsWith('tel:'))) {
       window.location.href = destination;
     }
