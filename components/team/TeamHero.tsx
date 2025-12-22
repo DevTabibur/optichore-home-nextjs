@@ -131,7 +131,7 @@ export function TeamHero() {
                       fontStyle: 'italic',
                     }}
                   >
-                    "Our mission is to empower businesses with innovative digital solutions that drive measurable growth and lasting impact."
+                    &quot;Our mission is to empower businesses with innovative digital solutions that drive measurable growth and lasting impact.&quot;
                   </p>
                 </div>
 
