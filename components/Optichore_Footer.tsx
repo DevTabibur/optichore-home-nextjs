@@ -4,6 +4,7 @@ import { Linkedin, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { SafeLink } from './SafeLink';
 import Link from 'next/link';
+import logo from '../public/images/optichore_logo.png'
 
 export function Optichore_Footer() {
   const [email, setEmail] = useState('');
@@ -158,7 +159,7 @@ export function Optichore_Footer() {
                 <div className="footer-logo-light">
                   <SafeLink href="/">
                     <ImageWithFallback
-                      src="https://optichore.com/wp-content/uploads/2025/02/Logo-PNG-1.png"
+                      src={logo.src}
                       alt="Optichore"
                       className="h-14 w-auto object-contain"
                       style={{ maxWidth: '220px', cursor: 'pointer' }}
@@ -521,7 +522,7 @@ export function Optichore_Footer() {
                 <div className="footer-logo-responsive">
                   <SafeLink href="/">
                     <ImageWithFallback
-                      src="https://optichore.com/wp-content/uploads/2025/02/Logo-PNG-1.png"
+                      src={logo.src}
                       alt="Optichore"
                       className="h-14 w-auto object-contain"
                       style={{ maxWidth: '220px', cursor: 'pointer' }}

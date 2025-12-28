@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Linkedin, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import Link from 'next/link';
+import logo from '../public/images/optichore_logo.png'
 
 export function NewsletterFooter() {
   const [email, setEmail] = useState('');
@@ -128,7 +129,7 @@ export function NewsletterFooter() {
               <div className="footer-logo-wrapper">
                 <Link href="/">
                   <ImageWithFallback
-                    src="https://optichore.com/wp-content/uploads/2025/02/Logo-PNG-1.png"
+                    src={logo.src}
                     alt="Optichore"
                     className="h-12 w-auto object-contain"
                     style={{ maxWidth: '200px', cursor: 'pointer' }}

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // /* eslint-disable @next/next/no-img-element */
 // "use client";
 // import { useState } from "react";
@@ -3316,7 +3317,7 @@ import { useState } from 'react';
 import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight, Clock, MapPin, Globe, CheckCircle2, Shield, Award, Users, Building2, ChevronDown, Phone as PhoneIcon } from 'lucide-react';
 import { ConsultationOverlay } from '@/components/ConsultationOverlay';
 
-// import logo from 'figma:asset/58999c323b4341362baed6ec5f1b9d3f7db35c54.png';
+import logo from '../../public/images/optichore_logo.png';
 
 export default function ConsultationPage() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -3664,16 +3665,16 @@ export default function ConsultationPage() {
 
                   <div style={{ position: 'relative', zIndex: 1 }}>
                     {/* Logo */}
-                    {/* <div style={{ marginBottom: '28px' }}>
+                    <div style={{ marginBottom: '28px' }}>
                       <img 
-                        src={logo}
+                        src={logo.src}
                         alt="Optichore"
                         style={{
                           width: '120px',
                           height: 'auto',
                         }}
                       />
-                    </div> */}
+                    </div>
 
                     {/* Micro Header */}
                     <div 

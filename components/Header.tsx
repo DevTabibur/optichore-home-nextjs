@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
  
 
 import { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-// import logo from "../public/images/58999c323b4341362baed6ec5f1b9d3f7db35c54.png"
+import logo from '../public/images/optichore_logo.png'
 import { ServicesDropdown } from "./ServicesDropdown";
 import { BlogDropdown } from "./BlogDropdown";
 import { SafeLink } from "./SafeLink";
@@ -90,14 +91,14 @@ export function Header() {
             <div className="flex items-center justify-between h-full">
               {/* ========== LOGO (ALL VIEWPORTS) ========== */}
               <div className="header-logo-group flex-shrink-0">
-                {/* <SafeLink href="/" className="inline-block">
+                <SafeLink href="/" className="inline-block">
                   <img
                     src={logo.src}
                     alt="Optichore"
                     className="lg:h-[40px] md:h-[36px] h-[34px] w-auto"
                     style={{ imageRendering: "-webkit-optimize-contrast" }}
                   />
-                </SafeLink> */}
+                </SafeLink>
               </div>
 
               {/* ========== CENTER NAVIGATION (DESKTOP ONLY) ========== */}
@@ -242,7 +243,7 @@ export function Header() {
                 borderColor: "rgba(0, 0, 0, 0.06)",
               }}
             >
-              {/* <img  src={logo.src} alt="Optichore" className="h-[36px] w-auto" /> */}
+              <img  src={logo.src} alt="Optichore" className="h-[36px] w-auto" />
               <button
                 onClick={() => setIsTabletMenuOpen(false)}
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
@@ -414,7 +415,7 @@ export function Header() {
                 borderColor: "rgba(0, 0, 0, 0.06)",
               }}
             >
-              {/* <img  src={logo.src} alt="Optichore" className="h-[34px] w-auto" /> */}
+              <img  src={logo.src} alt="Optichore" className="h-[34px] w-auto" />
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors"

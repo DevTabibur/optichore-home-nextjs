@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/purity */
 import { ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
